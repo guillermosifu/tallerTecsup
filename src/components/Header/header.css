@@ -1,0 +1,47 @@
+/*=============== HEADER ===============*/
+.background_header {
+  background: var(--body-color);
+}
+
+/*=============== NAV ===============*/
+
+@media screen and (min-width: 767px) {
+  .nav__calc {
+    height: calc(var(--header-height) + 1.5rem) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    width: 100%;
+    background: var(--container-color);
+    top: -150%;
+    left: 0;
+    padding: 3.5rem 0;
+    transition: 0.4s;
+    z-index: var(--z-fixed);
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+}
+
+/* Change background header */
+.scroll-header {
+  background: var(--container-color);
+}
+
+/* Active link */
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}

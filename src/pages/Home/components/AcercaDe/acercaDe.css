@@ -1,0 +1,18 @@
+/*=============== ABOUT ===============*/
+.about__container {
+  row-gap: 2rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: var(--mb-2);
+}
+
+.about__img {
+  width: 200px;
+  justify-self: center;
+  animation: floating 2s ease-in-out infinite;
+}
